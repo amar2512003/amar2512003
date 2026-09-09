@@ -47,21 +47,4 @@
 
 ---
 
-### 📊 GitHub Stats & Visitors
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=amar2512003&label=Profile%20Views&color=blueviolet&style=flat" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=amar2512003&show_icons=true&theme=radical&hide_border=true" height="160"/>
-  <img src="https://streak-stats.demolab.com/?user=amar2512003&theme=radical&hide_border=true" height="160"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amar2512003&layout=compact&theme=radical&hide_border=true" height="160"/>
-</p>
-
----
-
 <p align="center"><i>⭐️ From <a href="https://github.com/amar2512003">amar2512003</a></i></p>
