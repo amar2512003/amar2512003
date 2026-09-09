@@ -3,6 +3,7 @@
 
 <p align="center">
   <a href="https://sinhaamar.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="https://leetcode.com/u/Amar2512/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
   <a href="https://www.linkedin.com/in/amar-sinha2512/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:sinhaamar178@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
@@ -14,7 +15,6 @@
 - 🎓 Currently pursuing B.Tech in Computer Science (Data Science), batch 2023–2027
 - 🧠 Interested in **computer vision, full-stack development, and explainable AI** — currently exploring research-oriented graduate programs in Japan
 - 💼 Interned at **IIT Jammu** (AI/LLM automation, n8n, Hugging Face) and **Indian Oil Corporation Limited (IOCL)**
-- 🏆 Active competitive programmer (Java) — DP, graphs, bit manipulation, and more on LeetCode
 - 🌱 Always building — from computer-vision pipelines to full-stack web apps
 
 ---
@@ -50,12 +50,12 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=amar2512003&show_icons=true&theme=radical" height="160"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=amar2512003&theme=radical" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=amar2512003&show_icons=true&theme=radical&cache_seconds=1800" height="160"/>
+  <img src="https://streak-stats.demolab.com/?user=amar2512003&theme=radical" height="160"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amar2512003&layout=compact&theme=radical" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=amar2512003&layout=compact&theme=radical&cache_seconds=1800" height="160"/>
 </p>
 
 ---
