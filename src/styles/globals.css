@@ -251,36 +251,75 @@ a:hover {
 }
 
 .skill-card {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.02);
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 1.6rem 1.5rem;
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  backdrop-filter: blur(6px);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.03) inset, 0 12px 24px -18px rgba(0, 0, 0, 0.6);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .skill-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
+  border-color: rgba(110, 231, 183, 0.35);
+  transform: translateY(-4px);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05) inset, 0 20px 32px -16px rgba(0, 0, 0, 0.65);
 }
 
 .skill-icon {
-  font-size: 1.75rem;
-  margin-bottom: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  margin-bottom: 1.1rem;
+  color: var(--accent);
+  background: rgba(110, 231, 183, 0.08);
+  border: 1px solid rgba(110, 231, 183, 0.16);
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover .skill-icon {
+  background: rgba(110, 231, 183, 0.14);
+  border-color: rgba(110, 231, 183, 0.32);
 }
 
 .skill-category {
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 600;
   color: var(--fg);
-  margin: 0 0 0.6rem;
-  line-height: 1.3;
+  margin: 0 0 0.85rem;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .skill-items {
-  font-size: 0.85rem;
-  color: var(--muted);
-  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   margin: 0;
+}
+
+.skill-tag {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.skill-card:hover .skill-tag {
+  color: var(--fg);
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 /* Hero: profile photo beside name */
