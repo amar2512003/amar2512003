@@ -598,14 +598,22 @@ nav a,
     background: rgba(10, 10, 15, 0.97);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 0.75rem 6vw 1.5rem;
+    padding: 0 6vw;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.25s ease,
+      visibility 0s linear 0.3s;
   }
 
   .nav-links.open {
     max-height: 420px;
+    padding: 0.75rem 6vw 1.5rem;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.25s ease,
+      visibility 0s linear 0s;
   }
 
   .nav-link,
