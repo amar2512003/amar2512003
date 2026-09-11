@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'Who Wins 2029',
     description:
       'ML-powered election prediction platform forecasting state-wise Lok Sabha winners with Random Forest models trained on historical election data. Interactive Shiny dashboard with GIS-based India maps, seat trends, and party-wise analytics built on Plotly and GeoJSON.',
-    stack: ['R', 'Shiny'],
+    stack: ['R', 'Shiny','ggplot2','GeoJSON','sf','Plotly'],
     links: {
       github: 'https://github.com/amar2512003/WhoWins2029',
       demo: 'https://whowins2029.netlify.app/',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: 'AI Surveillance Platform',
     description:
       'Real-time detection and tracking system using YOLOv8 and ByteTrack, with restricted-zone intrusion alerts, loitering analysis, and optional DeepFace recognition. Scalable FastAPI + React stack with PostgreSQL persistence and Docker-based deployment.',
-    stack: ['FastAPI', 'YOLOv8'],
+    stack: ['FastAPI', 'YOLOv8','ByteTrack','DeepFace','OpenCV','PostgreSQL'],
     links: {
       github: 'https://github.com/amar2512003/Smart_Surveillance_System',
     },
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: 'Goppo',
     description:
       'Full-stack real-time communication platform supporting one-to-one messaging, audio calls, and video calls using WebRTC and Socket.IO. Implemented Clerk authentication, online and offline presence detection, instant messaging, responsive UI, global state management with Zustand, and Dockerized deployment on Render.',
-    stack: ['React', 'Node.js', 'WebRTC'],
+    stack: ['React', 'Node.js', 'WebRTC','Socket.io','Zustand','Docker'],
     links: {
       github: 'https://github.com/amar2512003/golpo',
       demo: 'https://goppoo.netlify.app/',
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     title: 'Football Match Analysis System',
     description:
       'Built an end-to-end computer vision pipeline to detect, track, and analyze players, referees, and the ball in football broadcast footage using a custom-trained YOLOv8 model fine-tuned on a Roboflow dataset, with ByteTrack for persistent multi-object tracking across frames. Implemented automatic team classification via K-Means clustering on jersey colors and a proximity-based ball-possession algorithm to compute live team ball-control statistics.',
-    stack: ['Python', 'YOLOv8', 'OpenCV'],
+    stack: ['Python', 'YOLOv8', 'OpenCV','ByteTrack'],
     links: {
       github: 'https://github.com/amar2512003/FIFA26',
     },
