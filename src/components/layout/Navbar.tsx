@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { CertificateModal } from '../common/CertificateModal'
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
+  const [resumeOpen, setResumeOpen] = useState(false)
   const close = () => setOpen(false)
 
   return (
@@ -26,15 +28,16 @@ export function Navbar() {
         <a href="#projects" className="nav-link" onClick={close}>Projects</a>
         <a href="#skills" className="nav-link" onClick={close}>Skills</a>
         <a href="#contact" className="nav-link" onClick={close}>Contact</a>
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noreferrer"
+        <button
+          type="button"
           className="resume-btn"
-          onClick={close}
+          onClick={() => {
+            setResumeOpen(true)
+            close()
+          }}
         >
           Resume
-        </a>
+        </button>
         <a
           href="/resume.pdf"
           download="Amar-Sinha-Resume.pdf"
@@ -50,6 +53,15 @@ export function Navbar() {
           </svg>
         </a>
       </span>
+
+      {resumeOpen && (
+        <CertificateModal
+          src="/resume.pdf"
+          type="pdf"
+          fileName="Amar-Sinha-Resume.pdf"
+          onClose={() => setResumeOpen(false)}
+        />
+      )}
     </nav>
   )
 }

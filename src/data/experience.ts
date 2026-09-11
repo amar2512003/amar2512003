@@ -6,6 +6,7 @@ export interface Experience {
   period: string
   points: string[]
   certificate?: string
+  certificateType?: 'pdf' | 'image'
 }
 
 export const experiences: Experience[] = [
@@ -19,7 +20,8 @@ export const experiences: Experience[] = [
       'Worked on object detection and multi-object tracking pipelines using YOLOv8.',
       'Applied transfer learning and dataset fine-tuning to build models for real-time video analysis.',
     ],
-    certificate: 'https://drive.google.com/file/d/1J_O-yqT_48ngVo0Cp2MH_er6iiwM2piT/view',
+    certificate: '/certificate-iitj.png',
+    certificateType: 'image',
   },
   {
     id: 'iocl',
@@ -30,6 +32,7 @@ export const experiences: Experience[] = [
     points: [
       'Conducted research on customer loyalty programs across industries and proposed data-driven strategies for improving customer acquisition and retention.',
     ],
-    certificate: 'https://drive.google.com/file/d/1EQdEvbiR82JtI8aXbrMEFLneJT4J5rMh/view',
+    certificate: '/certificate-iocl.pdf',
+    certificateType: 'pdf',
   },
 ]

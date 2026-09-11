@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import { experiences } from '../../data/experience'
+import { CertificateModal } from '../common/CertificateModal'
 
 export function ExperienceOverlay() {
+  const [openCertificate, setOpenCertificate] = useState<{ src: string; type: 'pdf' | 'image' } | null>(
+    null
+  )
+
   return (
     <section id="experience">
       <h2>Experience</h2>
@@ -19,13 +25,27 @@ export function ExperienceOverlay() {
           </ul>
           {exp.certificate && (
             <p>
-              <a href={exp.certificate} target="_blank" rel="noreferrer" className="project-link">
+              <button
+                type="button"
+                className="project-link certificate-trigger"
+                onClick={() =>
+                  setOpenCertificate({ src: exp.certificate!, type: exp.certificateType ?? 'pdf' })
+                }
+              >
                 View Certificate →
-              </a>
+              </button>
             </p>
           )}
         </div>
       ))}
+
+      {openCertificate && (
+        <CertificateModal
+          src={openCertificate.src}
+          type={openCertificate.type}
+          onClose={() => setOpenCertificate(null)}
+        />
+      )}
     </section>
   )
 }

@@ -13,7 +13,7 @@ export function useSectionObserver(ids: SectionId[]) {
           }
         })
       },
-      { threshold: 0.5 },
+      { threshold: 0, rootMargin: '-50% 0px -50% 0px' },
     )
 
     ids.forEach((id) => {

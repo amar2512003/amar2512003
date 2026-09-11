@@ -54,6 +54,10 @@ h2 {
   color: #7dd3fc;
 }
 
+#projects h2 {
+  color: #fef08a;
+}
+
 #experience h2 {
   color: #fca5a5;
 }
@@ -137,6 +141,126 @@ a:hover {
   color: #8ff5c9;
   text-decoration: none;
   text-shadow: 0 0 8px rgba(110, 231, 183, 0.85), 0 0 20px rgba(110, 231, 183, 0.55), 0 0 36px rgba(110, 231, 183, 0.3);
+  transform: translateY(-1px);
+}
+
+.certificate-trigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.certificate-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 8, 12, 0.82);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2.5rem 1.25rem;
+  animation: certificate-fade-in 0.2s ease;
+}
+
+@keyframes certificate-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.certificate-modal {
+  position: relative;
+  width: min(880px, 100%);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #0d1116;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+
+.certificate-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--fg);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.certificate-modal-close:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+
+.certificate-modal-body {
+  flex: 1;
+  min-height: 0;
+  background: #1a1d21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.certificate-modal-frame {
+  width: 100%;
+  height: min(75vh, 900px);
+  border: none;
+  display: block;
+}
+
+.certificate-modal-image {
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  display: block;
+}
+
+.certificate-modal-footer {
+  padding: 0.9rem 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  background: #0d1116;
+}
+
+.certificate-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.certificate-download-btn:hover {
+  background: var(--accent);
+  color: #05130d;
+  text-decoration: none;
   transform: translateY(-1px);
 }
 
@@ -387,9 +511,12 @@ nav a,
   padding: 0.45rem 1.1rem;
   border: 1px solid var(--accent);
   border-radius: 999px;
+  background: none;
   color: var(--accent);
+  font: inherit;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
   transition: box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 

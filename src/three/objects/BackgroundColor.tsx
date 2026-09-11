@@ -7,7 +7,7 @@ const sectionBg: Record<SectionId, string> = {
   hero: '#0a0a0f',
   education: '#0a0f14',
   experience: '#140a0a',
-  projects: '#14110a',
+  projects: '#111318',
   skills: '#0f0a14',
   contact: '#0a1412',
 }

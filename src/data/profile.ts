@@ -17,6 +17,6 @@ export const profile: Profile = {
     linkedin: 'https://www.linkedin.com/in/amar-sinha2512/',
     leetcode: 'https://leetcode.com/u/Amar2512/',
     instagram: 'https://www.instagram.com/a.m.a.r_25.12/',
-    site: 'https://sinhaamar.netlify.app',
+    site: 'https://v0-amarsinhaaa.vercel.app/',
   },
 }
