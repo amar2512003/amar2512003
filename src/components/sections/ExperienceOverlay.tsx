@@ -32,7 +32,7 @@ export function ExperienceOverlay() {
                   setOpenCertificate({ src: exp.certificate!, type: exp.certificateType ?? 'pdf' })
                 }
               >
-                View Certificate →
+                Certificate →
               </button>
             </p>
           )}

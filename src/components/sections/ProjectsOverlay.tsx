@@ -1,4 +1,5 @@
 import { projects } from '../../data/projects'
+import { ScreenshotCarousel } from '../ui/ScreenshotCarousel'
 
 export function ProjectsOverlay() {
   return (
@@ -8,6 +9,9 @@ export function ProjectsOverlay() {
         <div key={project.id} style={{ marginBottom: '2rem' }}>
           <h1 style={{ fontSize: '1.8rem' }}>{project.title}</h1>
           <p>{project.description}</p>
+          {project.screenshots && project.screenshots.length > 0 && (
+            <ScreenshotCarousel images={project.screenshots} alt={project.title} />
+          )}
           <div>
             {project.stack.map((s) => (
               <span className="tag" key={s}>

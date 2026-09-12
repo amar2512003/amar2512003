@@ -4,12 +4,13 @@ export interface Project {
   description: string
   stack: string[]
   links: { github?: string; demo?: string }
+  screenshots?: string[]
 }
 
 export const projects: Project[] = [
   {
     id: 'smartcity-grievance-portal',
-    title: 'SmartCity Grievance Portal',
+    title: 'Samadhan',
     description:
       'Built a civic grievance platform enabling citizens to report issues with photo evidence and precise GPS location, automatically route complaints to the relevant municipal body/district, and track grievance status through a citizen dashboard. Includes OTP-based authentication, admin dashboard with district filtering, status management, Google Maps integration, and an AI-powered citizen assistant with scope guardrails.',
     stack: ['React.js', 'Vite', 'Node.js', 'Express.js', 'PostgreSQL', 'Knex.js', 'JWT', 'Nodemailer', 'Groq API'],
@@ -17,6 +18,15 @@ export const projects: Project[] = [
       github: 'https://github.com/amar2512003/SmartCity_complaint_portal',
       demo: 'https://smartcity-frontend-virid.vercel.app/citizen/login',
     },
+    screenshots: [
+      '/screenshots/smartcity/01.jpg',
+      '/screenshots/smartcity/02.jpg',
+      '/screenshots/smartcity/03.jpg',
+      '/screenshots/smartcity/04.jpg',
+      '/screenshots/smartcity/05.jpg',
+      '/screenshots/smartcity/06.jpg',
+      '/screenshots/smartcity/07.jpg',
+    ],
   },
   {
     id: 'whowins2029',
@@ -28,6 +38,17 @@ export const projects: Project[] = [
       github: 'https://github.com/amar2512003/WhoWins2029',
       demo: 'https://whowins2029.netlify.app/',
     },
+    screenshots: [
+      '/screenshots/whowins2029/01.jpg',
+      '/screenshots/whowins2029/02.jpg',
+      '/screenshots/whowins2029/03.jpg',
+      '/screenshots/whowins2029/04.jpg',
+      '/screenshots/whowins2029/05.jpg',
+      '/screenshots/whowins2029/06.jpg',
+      '/screenshots/whowins2029/07.jpg',
+      '/screenshots/whowins2029/08.jpg',
+      '/screenshots/whowins2029/09.jpg',
+    ],
   },
   {
     id: 'ai-surveillance',
@@ -49,6 +70,13 @@ export const projects: Project[] = [
       github: 'https://github.com/amar2512003/kolmetro',
       demo: 'https://kolmetro.netlify.app/',
     },
+    screenshots: [
+      '/screenshots/kolmetro/01.jpg',
+      '/screenshots/kolmetro/02.jpg',
+      '/screenshots/kolmetro/03.jpg',
+      '/screenshots/kolmetro/04.jpg',
+      '/screenshots/kolmetro/05.jpg',
+    ],
   },
   {
     id: 'goppo',
@@ -60,6 +88,13 @@ export const projects: Project[] = [
       github: 'https://github.com/amar2512003/golpo',
       demo: 'https://goppoo.netlify.app/',
     },
+    screenshots: [
+      '/screenshots/goppo/01.jpg',
+      '/screenshots/goppo/02.jpg',
+      '/screenshots/goppo/03.jpg',
+      '/screenshots/goppo/04.jpg',
+      '/screenshots/goppo/05.jpg',
+    ],
   },
   {
     id: 'football-match-analysis',
@@ -81,5 +116,10 @@ export const projects: Project[] = [
       github: 'https://github.com/amar2512003/expense-tracker-site',
       demo: 'https://expense-tracker-site-eight.vercel.app/',
     },
+    screenshots: [
+      '/screenshots/expense-tracker/01.jpg',
+      '/screenshots/expense-tracker/02.jpg',
+      '/screenshots/expense-tracker/03.jpg',
+    ],
   },
 ]
