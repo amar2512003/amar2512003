@@ -105,6 +105,14 @@ export const projects: Project[] = [
     links: {
       github: 'https://github.com/amar2512003/FIFA26',
     },
+    screenshots: [
+      '/screenshots/football-match-analysis/01.jpg',
+      '/screenshots/football-match-analysis/02.jpg',
+      '/screenshots/football-match-analysis/03.jpg',
+      '/screenshots/football-match-analysis/04.jpg',
+      '/screenshots/football-match-analysis/05.jpg',
+      '/screenshots/football-match-analysis/06.jpg',
+    ],
   },
   {
     id: 'expense-tracker',

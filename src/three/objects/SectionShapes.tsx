@@ -19,7 +19,7 @@ const shapes: ShapeDef[] = [
   { id: 'experience', color: '#fca5a5', geometry: <octahedronGeometry args={[1.4, 0]} /> },
   {
     id: 'projects',
-    color: '#fef08a',
+    color: '#201c01',
     geometry: <cylinderGeometry args={[1.1, 1.1, 1.6, 6, 1]} />,
     metalness: 0.35,
     roughness: 0.35,

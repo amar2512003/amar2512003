@@ -13,7 +13,7 @@ export function HeroOverlay() {
         <h1>
           {profile.name}
           <br />
-          <span className="accent">Full-Stack Developer &amp; ML Engineer</span>
+          <span className="accent">Full-Stack &amp; ML Developer</span>
         </h1>
       </div>
       <p>{profile.summary}</p>
