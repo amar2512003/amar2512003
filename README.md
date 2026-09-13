@@ -13,7 +13,7 @@
 ### 🚀 About Me
 
 - 🎓 Currently pursuing B.Tech in Computer Science (Data Science), batch 2023–2027
-- 🧠 Interested in **computer vision, full-stack development, and explainable AI** — currently exploring research-oriented graduate programs in Japan
+- 🧠 Interested in **computer vision, full-stack development, and explainable AI** — 
 - 💼 Interned at **IIT Jammu** (AI/LLM automation, n8n, Hugging Face) and **Indian Oil Corporation Limited (IOCL)**
 - 🌱 Always building — from computer-vision pipelines to full-stack web apps
 
