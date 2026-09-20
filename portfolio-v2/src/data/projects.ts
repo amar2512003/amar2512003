@@ -86,7 +86,7 @@ export const projects: Project[] = [
     stack: ['React', 'Node.js', 'WebRTC','Socket.io','Zustand','Docker'],
     links: {
       github: 'https://github.com/amar2512003/golpo',
-      demo: 'https://golpooo.vercel.app/',
+      demo: 'https://goppoo.netlify.app/',
     },
     screenshots: [
       '/screenshots/goppo/01.jpg',
