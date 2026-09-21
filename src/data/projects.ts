@@ -68,7 +68,7 @@ export const projects: Project[] = [
     stack: ['JavaScript', 'Leaflet.js', 'OpenStreetMap'],
     links: {
       github: 'https://github.com/amar2512003/kolmetro',
-      demo: 'https://kolmetro.netlify.app/',
+      demo: 'https://kolmetro.vercel.app/',
     },
     screenshots: [
       '/screenshots/kolmetro/01.jpg',
