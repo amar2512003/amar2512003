@@ -65,7 +65,7 @@ export const projects: Project[] = [
     title: 'Kolkata Metro Route Planner',
     description:
       'Built and deployed an interactive Kolkata Metro route planner rendering real station locations on a dotted-line network map using Leaflet.js and OpenStreetMap tiles across all 5 metro lines. Implemented shortest-path route finding with estimated fare calculation, gate-wise exit information for each station, and geolocation-based nearest-station lookup.',
-    stack: ['JavaScript', 'Leaflet.js', 'OpenStreetMap'],
+    stack: ['JavaScript', 'Leaflet.js', 'OpenStreetMap','GoogleMaps API'],
     links: {
       github: 'https://github.com/amar2512003/kolmetro',
       demo: 'https://kolmetro.vercel.app/',
